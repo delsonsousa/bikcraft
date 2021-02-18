@@ -1,0 +1,40 @@
+// Cores
+$cor-primaria: #fec63e;
+$cor-segundaria: #000;
+$lightness-color: #fff;
+
+// Tipografia
+@mixin type-1($size) {
+  @if $size == 14 {
+    font-size: 0.875em;
+    line-height: 1.25em;
+  } @else if $size == 18 {
+    font-size: 1.125em;
+    line-height: 1.562em;
+  } @else if $size == 24 {
+    font-size: 1.5em;
+    line-height: 1.875em;
+  } @else if $size == 36 {
+    font-size: 2.25em;
+  } @else if $size == 48 {
+    font-size: 3em;
+  }
+}
+
+@mixin type-2($size) {
+  font-family: Georgia, "Times New Roman", serif;;
+  @if $size == 14 {
+    font-size: 0.875em;
+    line-height: 1.25em;
+  } @else if $size == 18 {
+    font-size: 1.125em;
+    line-height: 1.562em;
+  } @else if $size == 24 {
+    font-size: 1.5em;
+    line-height: 1.875em;
+  } @else if $size == 36 {
+    font-size: 2.25em;
+  } @else if $size == 48 {
+    font-size: 3em;
+  }
+}
